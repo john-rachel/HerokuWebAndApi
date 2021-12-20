@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="POC suite" preserve-order="true">
+    <parameter name="browserType" value="chrome"/>
+	<parameter name="executionType" value="localhost"/>
+	<parameter name="driverPath" value="WebDriverFiles\\"/>	
+ <parameter name="baseUrl" value="http://the-internet.herokuapp.com/"/>  
+			
+	<test name="Testing Heroku">	
+		<classes>				     
+		  <class name="scripts.GetCredentials"/> 
+		   <class name="scripts.DragDrop_Alert_iFrame"/> 
+		   <class name="scripts.ProgressbarMultipleWindows"/> 
+      <!--  <class name="scripts.RestfulBookerTestScripts">  -->        
+         
+		</classes>		
+	</test>
+</suite>
